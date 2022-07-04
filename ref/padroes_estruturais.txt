@@ -1,0 +1,25 @@
+Padrões Estruturais:
+  Adapter
+  Bridge
+  Composite
+  Decorator
+  Flyweight
+  Proxy
+
+*Adapter:
+  Permite que um objeto com interface incompatível colabore com outro
+
+*Bridge:
+  Polimorfismo de um objeto
+
+*Composite:
+  Estrutura em árvore
+
+*Decorator:
+  Herança organizada
+
+*Flyweight:
+  Quando precisa criar um grande número de objetos similares
+
+*Proxy:
+  Classe que limita o acesso a outra classe

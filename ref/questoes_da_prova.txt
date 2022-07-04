@@ -1,0 +1,23 @@
+Objetivo: O software deve prescrever um programa de treinamento.
+
+Entidades:
+  Programa: É composto de séries
+  Série: É composta de exercícios
+  Exercício: É composto por equipamentos
+  Halteres, acessórios e máquinas: Implementações de Equipamento
+
+Tipos de Programas:
+  Full workout:
+    Ativo: Segunda, quarta e sexta
+    Inativo: Terça, quinta, sábado e domingo
+  ABCD:
+    Ativo: Segunda, terça, quarta e quinta
+    Inativo: Sexta, sábado e domingo
+  Cardio:
+    Ativo: Segunda, quarta e sexta
+    Inativo: Terça, quinta, sábado e domingo
+
+1 | STATE
+  *O programa deve retornar a próxima série
+  *O programa se comporta de maneira diferente a depender do status (Dia da Semana)
+  

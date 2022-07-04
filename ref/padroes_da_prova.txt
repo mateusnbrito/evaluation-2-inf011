@@ -1,0 +1,43 @@
+Objetivo: Clientes da academia devem ter acesso e controle do seu programa de treinamento.
+
+Questão 1: State
+Questão 2: Observer
+Questão 3: Composite
+Questão 4: Flyweight
+
+Tipos de Programas:
+  *Full Workout:
+    Status ativo (Segunda, quarta e sexta):
+      Retorna a próxima série da lista de séries
+
+    Status inativo (Terça, quinta, sábado e domingo):
+      Não retorna nenhuma série
+
+  *ABCD:
+    Status ativo (Segunda, terça, quarta e sexta):
+      Segunda:
+        Retorna série de exerício da categoria A(Ombros e Abdominal)
+      Terça:
+        Retorna série de exerício da categoria B(Coxas e Panturrilhas)
+      Quarta:
+        Retorna série de exerício da categoria C(Peitoral e Tríceps)
+      Quinta:
+        Retorna série de exerício da categoria D(Costas e Bíceps)
+
+    Status inativo (Sexta, sábado e domingo):
+      Não retorna nenhuma série
+
+  *Cardiovascular:
+    Status ativo (Segunda, quarta e sexta):
+      Segunda: Retorna série de exerício da categoria Cardiovascular
+      Quarta: Retorna série de exerício da categoria Cardiovascular
+      Sexta: Retorna série de exerício da categoria Cardiovascular
+
+    Status inativo (Terça, quinta, sábado e domingo):
+      Não retorna nenhuma série
+
+// Programa: É composto de séries
+// Série:
+// Exercício: 
+// Equipamento: Múltiplos equipamentos pertencem a um exercício.
+// Halteres, acessórios e máquinas: Extendem a classe Equipamento.

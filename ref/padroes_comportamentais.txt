@@ -1,0 +1,17 @@
+*Chain of Responsibility:
+  Um cliente apresenta um problema que é passado por uma cadeia de operadores até ser resolvido.
+
+*Memento:
+  Como voltar a um estado anterior
+
+*Observer:
+  Notificação ao observador quando há uma mudança em alguma coisa
+
+*State:
+  Um objeto altera o seu comportamento quando um estado interno é alterado
+
+*Strategy:
+  Utilizar polimorfismo
+
+*Template Method:
+  Define um esqueleto numa super classe que será sobrescrito nas subclasses
