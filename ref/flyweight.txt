@@ -1,0 +1,4 @@
+Estado intrínseco (Constante) x extrínsico (Inconstante)
+
+Objetivo de diminuir a quantidade de instâncias.
+Ao invés de alocar espaço na memória, apontar para a alocação na memória.

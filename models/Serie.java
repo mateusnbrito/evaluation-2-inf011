@@ -1,11 +1,13 @@
 package models;
 
+import exercicios.exercicio.interfaces.Exercicio;
+
 public class Serie {
   private Integer qtyOfSeries;
   private Integer qtyOfRepetitionsPerSerie;
-  private Exercise exercise;
+  private Exercicio exercise;
 
-  public Serie(Integer qtyOfSeries, Integer qtyOfRepetitionsPerSerie, Exercise exercise) {
+  public Serie(Integer qtyOfSeries, Integer qtyOfRepetitionsPerSerie, Exercicio exercise) {
     this.qtyOfSeries = qtyOfSeries;
     this.qtyOfRepetitionsPerSerie = qtyOfRepetitionsPerSerie;
     this.exercise = exercise;
@@ -27,15 +29,18 @@ public class Serie {
     this.qtyOfRepetitionsPerSerie = qtyOfRepetitionsPerSerie;
   }
 
-  public Exercise getExercise() {
+  public Exercicio getExercise() {
     return exercise;
   }
 
-  public void setExercise(Exercise exercise) {
+  public void setExercise(Exercicio exercise) {
     this.exercise = exercise;
   }
 
   public void startSerie(){
-    System.out.println("A série foi iniciada...");
+    System.out.println(this.exercise.getNome());
+    System.out.println(this.qtyOfSeries);
+    System.out.println(this.qtyOfRepetitionsPerSerie);
+    System.out.println(this.exercise.getVideo());
   }
 }
