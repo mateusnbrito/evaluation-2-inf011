@@ -1,6 +1,10 @@
 package models;
 
+import java.io.File;
+
 import exercicios.exercicio.interfaces.Exercicio;
+import factories.VideoFactory;
+import types.VideoType;
 
 public class Serie {
   private Integer qtyOfSeries;
@@ -38,9 +42,12 @@ public class Serie {
   }
 
   public void startSerie(){
+    VideoType videoType = VideoFactory.getVideoType("[VIDEO DO EXERCÍCIO "+this.exercise.getNome()+"]", new File("C:/video"));
+    Video video = new Video(0.50, "MP4", "sports", videoType);
+
     System.out.println(this.exercise.getNome());
     System.out.println(this.qtyOfSeries);
     System.out.println(this.qtyOfRepetitionsPerSerie);
-    System.out.println(this.exercise.getVideo());
+    System.out.println((video.getVideoType()));
   }
 }

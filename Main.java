@@ -24,7 +24,6 @@ public class Main {
     String equipamentoIdentificador = "";
     Integer equipamentoQuantidade = null;
     String exercicioNome = "";
-    String exercicioVideo = "";
     ArrayList<TiposDeExercicios> exercicioCategorias = new ArrayList<>();
     ArrayList<TiposDeGruposMusculares> exercicioGruposMusculares = new ArrayList<>();
     ArrayList<TiposDeEquipamentos> exercicioEquipamentos = new ArrayList<>();
@@ -42,7 +41,6 @@ public class Main {
     Equipamento novoEquipamento1 = criarEquipamento(equipamentoTipoDeEquipamento, equipamentoDescricao, equipamentoMarca, equipamentoPeso, equipamentoIdentificador, equipamentoQuantidade);
 
     exercicioNome = "Caminhada na Esteira";
-    exercicioVideo = "[VIDEO DO EXERCICIO Caminhada na Esteira]";
     exercicioCategorias.add(TiposDeExercicios.CARDIOVASCULAR);
     exercicioCategorias.add(TiposDeExercicios.MOBILIDADE);
     exercicioGruposMusculares.add(TiposDeGruposMusculares.COXAS);
@@ -56,7 +54,6 @@ public class Main {
       .categorias(exercicioCategorias)
       .gruposMusculares(exercicioGruposMusculares)
       .equipamentos(equipamentos)
-      .video(exercicioVideo)
       .build();
 
     Client newClient = new Client("cliente@email.com", "(71)999999-9999");
@@ -70,6 +67,7 @@ public class Main {
     newProgram.getNotificationService().subscribeClient(newClient);
 
     newProgram.startProgram();
+    // newProgram.startProgram();
     newProgram.nextSerie();
 
     // Criação de um novo programa de treinamento
